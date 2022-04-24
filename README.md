@@ -12,7 +12,7 @@ Randomly generating unique opaque identifiers is a common problem that this libr
 
 Calculating the probability of collision in a set of n possible values is known as the [birthday problem](https://en.wikipedia.org/wiki/Birthday_problem).
 
-With a length of 20 characters picked at random from an alphabet of 62 symbols (a-zA-Z0-9), at a pace of 1,000,000 identifiers generated per second, it would take 4,000 years to reach a 1% collision probability (that is the default this library settled for).
+With a length of 20 characters picked at random from an alphabet of 62 symbols (a-zA-Z0-9), at a pace of 1,000,000 identifiers generated per second, it would take 4,000 years to reach a 1% collision probability (20 chars/62 symbols is the default this library settled for).
 
 
 ### Global identifiers
