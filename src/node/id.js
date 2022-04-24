@@ -1,6 +1,6 @@
 import { randomBytes } from "node:crypto";
 
-export async function generateLocalIdentifier() {
+export async function id() {
   const size = 20;
   const symbols = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   const random = randomBytes(size);
