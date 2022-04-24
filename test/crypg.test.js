@@ -1,5 +1,5 @@
 import { assert } from "console";
-import { id, namednode, url, urn, uuid } from "../src/crypg.node.js";
+import { id, namednode, url, urn, uuid } from "../src/crypg.js";
 
 assert(typeof(await id()) == "string");
 assert(typeof((await namednode()).value) == "string");
