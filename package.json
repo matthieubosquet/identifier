@@ -5,6 +5,8 @@
   "main": "./src/crypg.js",
   "type": "module",
   "scripts": {
+    "audit": "npm audit --production --audit-level=moderate",
+    "lint": "",
     "test": "node ./test/crypg.test.js"
   },
   "repository": {
