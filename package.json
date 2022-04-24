@@ -4,6 +4,7 @@
   "description": "Opaque identifier generation.",
   "type": "module",
   "main": "./src/crypg.js",
+  "types": "./src/crypg.d.ts",
   "scripts": {
     "audit": "npm audit --production --audit-level=moderate",
     "build": "",
