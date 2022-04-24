@@ -8,9 +8,11 @@ Randomly generating unique opaque identifiers is a common problem that this libr
 
 ### Local identifiers
 
+#### ID
+
 Calculating the probability of collision in a set of n possible values is known as the [birthday problem](https://en.wikipedia.org/wiki/Birthday_problem).
 
-With a length of 20 characters picked at random from an alphabet of 62 symbols (a-zA-Z0-9), at a pace of 1,000,000 identifiers generated per second, it would take 4,000 years to reach a 1% collision probability.
+With a length of 20 characters picked at random from an alphabet of 62 symbols (a-zA-Z0-9), at a pace of 1,000,000 identifiers generated per second, it would take 4,000 years to reach a 1% collision probability (that is the default this library settled for).
 
 
 ### Global identifiers
@@ -33,14 +35,62 @@ The `uuid` [URN Namespace Identifier](https://datatracker.ietf.org/doc/html/rfc2
 
 A URL is a kind of [Uniform Resource Identifier](https://www.rfc-editor.org/rfc/rfc3986) (URI) that, in addition to identifying a resource, provides a means of locating the resource by describing its primary access mechanism.
 
+
+#### NamedNode
+
+A [NamedNode](http://rdf.js.org/data-model-spec/#namednode-interface) is the standard RDF/JS abstraction for [RDF IRI nodes](https://www.w3.org/TR/rdf11-concepts/#section-IRIs).
+
+
 ## How to?
 
 ### Generate a local identifier
 
-`generateLocalIdentifier()`
+```javascript
+import { id } from "crypg";
 
-Generate an URL: `generateURL(baseUrl)`.
+id();
+```
 
-Generate a global identifier: `generateGlobalIdentifier()`.
 
-Generate a URN: `generateURN()`.
+### Generate a UUID
+
+```javascript
+import { uuid } from "crypg";
+
+uuid();
+```
+
+
+### Generate a URN
+
+```javascript
+import { urn } from "crypg";
+
+urn();
+```
+
+
+### Generate a URL
+
+```javascript
+import { url } from "crypg";
+
+// Returns a URL with base https://example.org/
+url();
+
+// Returns a URL with base https://example.com/
+url("https://example.com")
+```
+
+
+### Generate a NamedNode
+
+```javascript
+import { namednode } from "crypg";
+
+// Returns a NamedNode with base URL https://example.org/ for its value
+namednode("https://example.com");
+
+// Returns a NamedNode that is a UUID URN
+namednode();
+```
