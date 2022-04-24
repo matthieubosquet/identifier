@@ -1,9 +1,9 @@
 {
   "name": "crypg",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Opaque identifier generation.",
-  "main": "./src/crypg.js",
   "type": "module",
+  "exports": "./src/crypg.js",
   "scripts": {
     "audit": "npm audit --production --audit-level=moderate",
     "build": "",
