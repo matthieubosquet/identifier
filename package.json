@@ -6,8 +6,11 @@
   "type": "module",
   "scripts": {
     "audit": "npm audit --production --audit-level=moderate",
+    "build": "",
     "lint:ci": "",
-    "test": "node ./test/crypg.test.js"
+    "test": "npm run test:unit",
+    "test:unit": "node ./test/crypg.test.js",
+    "test:e2e": ""
   },
   "repository": {
     "type": "git",
