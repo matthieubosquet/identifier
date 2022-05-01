@@ -11,7 +11,7 @@ Calculating the probability of collision in a set of n possible values is known 
 
 With a length of 20 characters picked at random from an alphabet of 62 symbols (a-zA-Z0-9), at a pace of 1,000,000 identifiers generated per second, it would take 4,000 years to reach a 1% collision probability.
 
-This library settled for generating local identifiers 20 characters randomly picked among 62 symbols (a-zA-Z0-9) using crypto.
+This library settled for generating local identifiers composed of 20 characters randomly picked among 62 symbols (a-zA-Z0-9) using crypto.
 
 
 ## Global Identifiers Generation
