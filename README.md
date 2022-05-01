@@ -26,7 +26,7 @@ A [Universally Unique Identifier](https://datatracker.ietf.org/doc/html/rfc4122)
 
 UUIDs don't require a registration process to be unique, making them very low minting-cost URNs (other URN namespaces such as, for example, [ISBN](https://datatracker.ietf.org/doc/html/rfc3187#section-5) rely on a registration process).
 
-The `uuid` [URN Namespace Identifier](https://datatracker.ietf.org/doc/html/rfc2141#section-2) has been [described](https://datatracker.ietf.org/doc/html/rfc4122#section-3) and [registered](https://www.iana.org/assignments/urn-namespaces/urn-namespaces.xhtml) following [due process](https://www.rfc-editor.org/rfc/rfc8141.html#section-6), hence `urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6` is the valid URN representation of UUID `f81d4fae-7dec-11d0-a765-00a0c91e6bf6`.
+The `uuid` [URN Namespace Identifier](https://datatracker.ietf.org/doc/html/rfc2141#section-2) has been [described](https://datatracker.ietf.org/doc/html/rfc4122#section-3) and [registered](https://www.iana.org/assignments/urn-namespaces/urn-namespaces.xhtml) following [due process](https://datatracker.ietf.org/doc/html/rfc8141#section-6), hence `urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6` is the valid URN representation of UUID `f81d4fae-7dec-11d0-a765-00a0c91e6bf6`.
 
 
 ### URL
@@ -34,7 +34,7 @@ The `uuid` [URN Namespace Identifier](https://datatracker.ietf.org/doc/html/rfc2
 Provided a base URL, one can concatenate a local identifier to obtain a globally unique identifier.
 
 
-### NamedNode
+### RDF Node
 
 A [NamedNode](http://rdf.js.org/data-model-spec/#namednode-interface) is the standard RDF/JS abstraction for [RDF IRI nodes](https://www.w3.org/TR/rdf11-concepts/#section-IRIs).
 
